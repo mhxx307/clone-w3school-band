@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #main-menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        #main-menu li {
+            list-style-type: none;
+            padding: 0 24px;
+        }
+
+        #main-menu li a {
+            padding: 15px 0;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+        }
+
+        #main-menu li a::after {
+            content: "";
+            height: 5px;
+            width: 0;
+            background-color: tomato;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #main-menu li a:hover::after {
+            width: 50%;
+            transform: translateX(100%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul id="main-menu">
+                <li><a href="#">Trang chu</a></li>
+                <li><a href="#">Lien he</a></li>
+                <li><a href="#">Ve toi</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Marketing</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
