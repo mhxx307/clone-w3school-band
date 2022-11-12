@@ -1,2 +1,2 @@
 # clone-w3school-band
-clone the band website w3s
+visit in https://mhxx307.github.io/clone-w3school-band/
